@@ -1,0 +1,48 @@
+###Event_new
+POST http://127.0.0.1:8080/event/new
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZmFzdGFwaUBwYWtjdC5jb20iLCJleHBpcmVzIjoxNjkxNTAyODU1Ljc4NDI5N30.4AnnwVce5atbc0iOhZ4xEFAYee2zm3umvuqQ4CPAbPQ
+
+{
+  "title" : "FastAPI Book Launch",
+  "image" : "fastapi-book.jpeg",
+  "description" : "DESC!!",
+  "tags" : ["python","fastapi"],
+  "location" : "google meet"
+}
+
+###Event_get
+GET http://127.0.0.1:8080/event/test/five
+
+###Event_get
+GET http://127.0.0.1:8080/event/test/ten
+
+###Event_get_2
+GET http://127.0.0.1:8080/event/test/ten
+
+###Event_get_3
+GET http://127.0.0.1:8080/event/test/ten
+
+###Event_get_4
+GET http://127.0.0.1:8080/event/test/ten
+
+###Event_get_id
+GET http://127.0.0.1:8080/event/1
+
+###Event_delete_id
+DELETE http://127.0.0.1:8080/event/2
+
+
+
+###Event_Update
+PUT http://127.0.0.1:8080/event/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZmFzdGFwaUBwYWtjdC5jb20iLCJleHBpcmVzIjoxNjkxNTAyODU1Ljc4NDI5N30.4AnnwVce5atbc0iOhZ4xEFAYee2zm3umvuqQ4CPAbPQ
+
+{
+  "title" : "aaasdasdasd",
+  "image" : "s-book.jpeg",
+  "description" : "qqqqq!!",
+  "tags" : ["python","fastapi"],
+  "location" : "google meet"
+}

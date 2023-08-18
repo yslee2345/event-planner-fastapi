@@ -1,0 +1,19 @@
+###User-Signup
+POST http://127.0.0.1:8080/user/signup
+Content-Type: application/json
+
+{
+  "email" : "fastapi@pakct.com",
+  "password" : "asd",
+  "username" : "Fastpa"
+}
+
+###User-Signin
+POST http://127.0.0.1:8080/user/signin
+Content-Type: application/json
+
+{
+  "email" : "fast2api@pakct.com",
+  "password" : "asd"
+
+}

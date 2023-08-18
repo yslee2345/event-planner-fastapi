@@ -1,0 +1,43 @@
+##
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/account/
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/packtbook/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "Name": "Jack",
+  "Publisher": "yes24",
+  "Isbn": "1234-123sad-123"
+}
+
+###
+GET http://127.0.0.1:8000/packtbook/3
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:8000/packtbooks?packtbooks=qq&id=3
+Content-Type: application/json
+
+###
+POST http://127.0.0.1:8080/user/signup
+Content-Type: application/json
+
+{
+  "email" : "fastapi@pakct.com",
+  "password" : "asd",
+  "username" : "Fastpa"
+}
